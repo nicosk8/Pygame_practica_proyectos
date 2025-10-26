@@ -8,16 +8,16 @@ import random as rd
 
 def set_main_game_configs(game_name: str) -> dict:
     configs = {
-        'icono_surface': pg.image.load(PATH_ESFERA_IMG),
+#        'icono_surface': pg.image.load(PATH_ESFERA_IMG),
         # main_display: pg.display.set_mode(ASPECT_RATIO, pg.RESIZABLE)
         'main_display': pg.display.set_mode(ASPECT_RATIO),
-        'color_fondo': pg.Color('black'),
+        'color_fondo': pg.Color('pink'),
         'running_state': True,
         'selected_hero_info': None
     }
 
     pg.display.set_caption(game_name)
-    pg.display.set_icon(configs.get('icono_surface'))
+#    pg.display.set_icon(configs.get('icono_surface'))
 
     return configs
 
